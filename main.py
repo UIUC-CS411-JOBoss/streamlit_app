@@ -71,7 +71,7 @@ def show_job_details(item: pd.Series):
 df, bm25 = read_data(fn)
 
 with st.form("my_form"):
-    search_q = st.text_input(label="Search a job")
+    search_q = st.text_input(label="Search Jobs")
     job_type = st.selectbox(
         'Job Type',
         ('Both', 'Internship', 'Job'))
